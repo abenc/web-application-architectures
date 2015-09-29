@@ -1,3 +1,11 @@
+#download the sources, and execute WS.html for the exercises
+
+
+
+
+
+
+
 # JAVASCRIPT WORLD DOMINATION
 
 ## Intro
