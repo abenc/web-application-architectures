@@ -1,5 +1,6 @@
-#download the sources, and execute WS.html for the exercises
-
+#download the sources in the WD directory, and execute WS.html for the exercises
+#Didn't worked that much on the css, only for the layout
+#The JS functions could be refactored but not enough time
 
 
 
