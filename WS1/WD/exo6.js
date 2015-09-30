@@ -81,17 +81,17 @@ function display(editedRentalIds){
 
   //  document.write('<p>'+ datadrive6.rentals[i].driver.firstName+' '+datadrive6.rentals[i].driver.lastName+' : '+prix[0]+'<br>deductibleReduction :'+prix[1]+'<br> commission : '+prix[2]+'<br> insurance : '+prix[3]+'<br> assistance : '+ prix[4]+'<br>drivy : '+prix[5]+' </p>')
 
-    exercice_display.innerHTML += ('<div class="case">Driver '+firstname+' '+lastname+' pays : '+prix[0]+'<br>DeductibleReduction : '+prix[1]
-          +'<br> Owner gets : '+prix[6]+'<br> Insurance gets : '+prix[3]+'<br>Assistance gets :'+prix[4]+'<br> Drivy gets : '+prix[5]+"<p></div>" );
+    exercice_display.innerHTML += ('<p> Driver '+firstname+' '+lastname+' pays : '+prix[0]+'<br>DeductibleReduction : '+prix[1]
+          +'<br> Owner gets : '+prix[6]+'<br> Insurance gets : '+prix[3]+'<br>Assistance gets :'+prix[4]+'<br> Drivy gets : '+prix[5]+"</p>" );
 
 
     }
 }
 
-function ex6(){
+function ex6(id){
   if(exercice_display.innerHTML != ''){exercice_display.innerHTML=''}//vider le display pannel
   var editedRentalIds =[];
-
+writeTitle(id,exercice_display);
   for(var i =0;i<datadrive6.rentalModifications.length;i++){
     editedRentalIds.push(getModifiedRentalsId(datadrive6,datadrive6.rentalModifications[i].rentalId));
   }

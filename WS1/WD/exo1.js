@@ -59,8 +59,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 exercice_display =document.getElementById('exercice_display');
 });
 
-function ex1(){
+function writeTitle(id,layout){
+  layout.innerHTML = "<span class='mdl-layout-title marginFix'><h1>Exercice "+id+"</h1></span>";
+}
+function ex1(id){
   if(exercice_display.innerHTML != ''){exercice_display.innerHTML=''}
+  writeTitle(id,exercice_display);
 
     for (var i = 0; i < datadrive.rentals.length; i++) {
 

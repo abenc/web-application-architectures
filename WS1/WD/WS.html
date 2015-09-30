@@ -3,6 +3,9 @@
 <head>
 <title>WS</title>
 </head>
+<link rel="stylesheet" href="mdesigntest/css/material.min.css">
+<script src="mdesigntest/css/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="setView.js" ></script>
 <script src="exo1.js" ></script>
 <script src="exo2.js" ></script>
@@ -12,14 +15,19 @@
 <script src="exo6.js" ></script>
 <link rel="stylesheet" href="WS.css">
 <body>
-  <div id="wrapper">
-      <div id="list_exercice" class="pannel_left">
-      </div>
 
-      <div id=exercice_display class="pannel_right">
-        Display Pannel
-      </div>
-  </div>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div  class="mdl-layout__drawer">
+      <span class="mdl-layout-title marginFix">JavaScript Stuff</span>
+      <nav id="list_exercice" class="mdl-navigation">
+      </nav>
+    </div>
+
+    <main id="exercice_display" class="mdl-layout__content">
+
+    </main>
+
+</div>
 
 
 </body>

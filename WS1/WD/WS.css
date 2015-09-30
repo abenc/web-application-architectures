@@ -24,3 +24,26 @@ float:left;
     border: 1px solid;
     cursor: pointer;
 }
+nav {
+  cursor: pointer;
+}
+.mdl-navigation__link {
+
+text-decoration: none;
+font-weight: 400;
+font-size: 20px;
+margin: 0;
+}
+#exercice_display{
+  margin-left:12%;
+  margin-top: 1%;
+}
+.mdl-layout__content{
+text-align: justify;
+}
+.marginFix{
+  margin-bottom: 15px;
+}
+.gris{
+background:#757575 !important
+}

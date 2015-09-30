@@ -53,8 +53,9 @@ var datadrive3 = {
     }
     ]
 }
-function ex3(){
+function ex3(id){
   if(exercice_display.innerHTML != ''){exercice_display.innerHTML=''}
+  writeTitle(id,exercice_display);
       for (var i = 0; i < datadrive3.rentals.length; i++) {
 
             var pickupDate = new Date(datadrive3.rentals[i].pickupDate);
@@ -64,7 +65,7 @@ function ex3(){
             var carId = datadrive3.rentals[i].carId;
             var prix=getPrice3(carId,datadrive3,days,distance,2);
             exercice_display.innerHTML += ('<p>'+ datadrive3.rentals[i].driver.firstName+' '+datadrive3.rentals[i].driver.lastName+'<br> prix : '+prix[4]+' <br> commission :'+prix[0]+'<br> insurance :'+prix[1]
-            +'<br> assistance :'+prix[2]+'<br> drivy :'+prix[3]+'</p><br>');
+            +'<br> assistance :'+prix[2]+'<br> drivy :'+prix[3]+'</p>');
     }
 }
 function dateDiff(dateOld,dateNew)

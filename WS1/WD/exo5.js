@@ -53,8 +53,9 @@ var datadrive5 = {
   ]
 };
 
-function ex5(){
+function ex5(id){
 if(exercice_display.innerHTML != ''){exercice_display.innerHTML=''}
+writeTitle(id,exercice_display);
     for (var i = 0; i < datadrive5.rentals.length; i++) {
           var pickupDate = new Date(datadrive5.rentals[i].pickupDate);
           var returnDate= new Date(datadrive5.rentals[i].returnDate);
@@ -68,7 +69,7 @@ if(exercice_display.innerHTML != ''){exercice_display.innerHTML=''}
           var prix=getPrice5(carId,datadrive5,days,distance,i);
         //  document.write('<p>'+ datadrive5.rentals[i].driver.firstName+' '+datadrive5.rentals[i].driver.lastName+' : '+prix[0]+'<br>deductibleReduction :'+prix[1]+'<br> commission : '+prix[2]+'<br> insurance : '+prix[3]+'<br> assistance : '+ prix[4]+'<br>drivy : '+prix[5]+' </p>')
           exercice_display.innerHTML += ('<p> Driver '+firstname+' '+lastname+' pays : '+prix[0]+'<br>DeductibleReduction : '+prix[1]
-                +'<br> Owner gets : '+prix[6]+'<br> Insurance gets : '+prix[3]+'<br>Assistance gets :'+prix[4]+'<br> Drivy gets : '+prix[5] );
+                +'<br> Owner gets : '+prix[6]+'<br> Insurance gets : '+prix[3]+'<br>Assistance gets :'+prix[4]+'<br> Drivy gets : '+prix[5]+'</p>' );
 
     }
 }
