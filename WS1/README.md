@@ -1,5 +1,5 @@
 #download the sources in the WD directory, and execute WS.html for the exercises
-#Didn't worked that much on the css, only for the layout
+#Using of some material design properties for the CSS 
 #The JS functions could be refactored but not enough time
 
 
