@@ -1,0 +1,7 @@
+{
+	"categorie":"4X4",
+	"marque": "Lexus",
+	"modele": "Rx",
+  "annee-modele": "2009",
+	"required": ["marque", "annee-modele"]
+}

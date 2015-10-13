@@ -1,0 +1,8 @@
+{
+	"marque": "Lexus",
+	"modele": "Rx",
+  "annee-modele": "2009",
+	"kilometrage": "188000",
+  "carburant": "essence",
+	"required": ["marque", "annee-modele"]
+}
