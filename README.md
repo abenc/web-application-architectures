@@ -1,3 +1,5 @@
+#[JS exercises & solution in WS1](WS1)
+
 # WEB APPLICATION ARCHITECTURE(S)
 
 > Courses and Workshops for ESILV
